@@ -10,7 +10,7 @@ export default function Home() {
       </p>
       <Link 
         href="/instructions" 
-        className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-105"
+        className="hover:bg-blue-600 border-2 rounded-[20px] text-white font-bold py-3 px-6 transition duration-300 ease-in-out transform hover:scale-105"
       >
         Get Started
       </Link>
