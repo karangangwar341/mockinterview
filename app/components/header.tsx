@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <header className="bg-white py-4">
+    <header className="bg-white py-2">
       <nav className="container mx-auto px-8">
         <ul className="flex justify-between items-center">
           {/* Logo */}
@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
             <Link href="/">
               <img
                 src="https://interview.zeko.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FzekoLogo.52f03e08.svg&w=256&q=75"
-                className="h-5 lg:h-8"
+                className="h-5 lg:h-6"
                 alt="Logo"
               />
             </Link>

@@ -52,6 +52,13 @@ export default function ScreenShareCheck({ granted, onPermissionChange }: Screen
   return (
     <div className="bg-gray-800 p-6 rounded-lg">
       <h2 className="text-2xl font-bold mb-4">Screen Sharing</h2>
+
+ <div>
+  preview
+ </div>
+
+
+
       <p className="mb-4">
         {granted
           ? 'Screen sharing is enabled. You can share your screen during the interview if needed.'
