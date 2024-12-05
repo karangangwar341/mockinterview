@@ -86,18 +86,12 @@ export default function MicrophoneCheck({ granted, onPermissionChange }: Microph
   return (
     <div className="bg-gray-800 p-6 rounded-lg">
       <h2 className="text-2xl font-bold mb-4">Microphone</h2>
-      <div className="h-16 bg-black rounded-lg overflow-hidden mb-4 flex items-center">
-        <div
-          className="h-full bg-green-500 transition-all duration-100"
-          style={{ width: `${(volume / 255) * 100}%` }}
-        ></div>
-      </div>
       {error && <p className="text-red-500 mb-4">{error}</p>}
       {!granted ? (
         <button
           onClick={handleMicrophoneCheck}
-          className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out"
-        >
+          className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-xl w-full transition duration-300 ease-in-out"
+          >
           Check Microphone
         </button>
       ) : (

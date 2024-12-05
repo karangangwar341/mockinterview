@@ -52,13 +52,6 @@ export default function ScreenShareCheck({ granted, onPermissionChange }: Screen
   return (
     <div className="bg-gray-800 p-6 rounded-lg">
       <h2 className="text-2xl font-bold mb-4">Screen Sharing</h2>
-
- <div>
-  preview
- </div>
-
-
-
       <p className="mb-4">
         {granted
           ? 'Screen sharing is enabled. You can share your screen during the interview if needed.'
@@ -68,7 +61,7 @@ export default function ScreenShareCheck({ granted, onPermissionChange }: Screen
       {!granted ? (
         <button
           onClick={handleScreenShareCheck}
-          className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out"
+          className="bg-blue-600 hover:bg-blue-700  text-white font-bold py-2 px-4 rounded-xl w-full transition duration-300 ease-in-out"
         >
           Test Screen Sharing
         </button>

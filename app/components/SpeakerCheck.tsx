@@ -27,6 +27,9 @@ export default function SpeakerCheck({ granted, onPermissionChange }: SpeakerChe
         })
     }
   }
+  const handleSpeakerStop =()=>{
+setIsPlaying(false)
+  }
 
   const handleAudioEnded = () => {
     setIsPlaying(false)
@@ -42,14 +45,14 @@ export default function SpeakerCheck({ granted, onPermissionChange }: SpeakerChe
 
       {error && <p className="text-red-500 mb-4">{error}</p>}
       <button
-        onClick={handleSpeakerCheck}
-        disabled={isPlaying}
+        onClick={isPlaying? handleSpeakerStop: handleSpeakerCheck}
         className={`${
-          isPlaying ? 'bg-gray-600' : 'bg-blue-600 hover:bg-blue-700'
-        } text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out`}
+          isPlaying ? 'bg-gray-600 bg-red-600' : 'bg-blue-600  hover:bg-blue-700'
+        } text-white font-bold py-2 px-4 transition w-full rounded-xl duration-300 ease-in-out`}
       >
-        {isPlaying ? 'Playing...' : 'Test Speaker'}
+        {isPlaying ? 'Stop...' : 'Test Speaker'}
       </button>
+      
     </div>
   )
 }

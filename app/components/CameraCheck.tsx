@@ -67,7 +67,7 @@ export default function CameraCheck({ granted, onPermissionChange }: CameraCheck
       {!granted ? (
         <button
           onClick={handleCameraCheck}
-          className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out"
+          className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-xl w-full transition duration-300 ease-in-out"
         >
           Check Camera
         </button>
